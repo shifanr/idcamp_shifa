@@ -31,7 +31,7 @@ max_date = all_df["order_date"].max()
 # menambahkan widget sidebar
 with st.sidebar:
     # menambahkan logo perusahaan
-    st.image("Ss.png")
+    st.image("dashboard/Ss.png")
 
     # mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
