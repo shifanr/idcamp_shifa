@@ -13,7 +13,7 @@ sns.set(style='dark')
 # st.write("Selamat datang di dashboard interaktif!")
 
 # memuat data csv
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("dashboard/all_data.csv")
 
 # preprocessing data
 datetime_columns = ["order_date", "order_delivered_customer_date"]
