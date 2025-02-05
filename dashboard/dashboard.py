@@ -13,7 +13,7 @@ sns.set(style='dark')
 # st.write("Selamat datang di dashboard interaktif!")
 
 # memuat data csv
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("dashboard/all_data.csv")
 
 # preprocessing data
 datetime_columns = ["order_date", "order_delivered_customer_date"]
@@ -31,7 +31,7 @@ max_date = all_df["order_date"].max()
 # menambahkan widget sidebar
 with st.sidebar:
     # menambahkan logo perusahaan
-    st.image("Ss.png")
+    st.image("dashboard/Ss.png")
 
     # mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
